@@ -14,11 +14,11 @@
 
 ## **Installation**
 
-You can download the latest release from the [Releases](https://github.com/yourusername/nrg2iso/releases) page.
+You can download the latest release from the [Releases](https://github.com/basrach/nrg2iso/releases) page.
 
 Clone the repository and compile:
 ```bash
-git clone https://github.com/yourusername/nrg2iso.git
+git clone https://github.com/basrach/nrg2iso.git
 cd nrg2iso
 go build .
 ```
