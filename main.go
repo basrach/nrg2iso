@@ -119,7 +119,7 @@ func readChunk(file *os.File) (any, error) {
 	case "END!":
 		chunk = &END{}
 	default:
-		return nil, fmt.Errorf("uknown chunk ID: %s", chunkID)
+		return nil, fmt.Errorf("unknown chunk ID: %s", chunkID)
 	}
 
 	err = binary.Read(file, binary.BigEndian, chunk)
@@ -234,7 +234,7 @@ type DAOX struct {
 	Isrc       [12]byte
 	SectorSize uint16
 	Mode       uint16
-	Uknown     uint16
+	Unknown    uint16
 	Index0     int64
 	Index1     int64
 	EndOfTrack int64
@@ -245,7 +245,7 @@ type SINF struct {
 }
 
 type MTYP struct {
-	Uknown int32
+	Unknown int32
 }
 
 type END struct{}
